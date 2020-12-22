@@ -1,0 +1,9 @@
+#debugContainer {
+	border: 1px dashed black;
+	clear: both;
+}
+
+#debugContainer ul {
+	padding: 0 0 0 10px;
+	list-style: none;
+}

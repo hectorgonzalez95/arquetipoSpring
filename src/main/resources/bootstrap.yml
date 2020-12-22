@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: spring-boot-web-app
+  cloud:
+    config:
+      failFast: true
+      uri: http://dockerdesa.mineduc.cl/properties-centralizados/
+      server: 
+        native:
+          searchLocations: classpath:/

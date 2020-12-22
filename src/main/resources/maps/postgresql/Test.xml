@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="cl.hector.arqutipo_web.mappers.SpringBootWebAppMapper">
+	
+	<resultMap type="cl.hector.arqutipo_web.models.SpringBootWebAppTestPojo" id="testPojo">
+		<id property="idTest" column="id_test"/>
+		<result property="descripcion" column="descripcion"/>
+	</resultMap>
+
+	<sql id="testSQL">
+		SELECT id_test, descripcion 
+		FROM desarrollo.tabla_test
+	</sql>
+	
+	<select id="getTest" resultMap="testPojo" parameterType="java.lang.Long">
+		<include refid="testSQL"/>
+		WHERE id_test = #{idTest}
+	</select>
+
+	<insert id="insertTest" parameterType="cl.hector.arqutipo_web.models.SpringBootWebAppTestPojo">
+		INSERT INTO desarrollo.tabla_test(id_test, descripcion) 
+		VALUES (#{testPojo.idTest}, #{testPojo.descripcion});
+	</insert>
+	
+</mapper>
+
