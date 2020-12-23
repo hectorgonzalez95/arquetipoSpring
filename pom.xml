@@ -15,7 +15,7 @@
 		<servlet.version>3.1.0</servlet.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<mineduc.framework.version>2.4.1-SNAPSHOT</mineduc.framework.version>
-		<nexus.repo.url>http://svnadm.mineduc.cl/nexus/content/repositories</nexus.repo.url>
+		<nexus.repo.url>http://dockerdesa.mineduc.cl:8081/nexus/content/repositories</nexus.repo.url>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<freemarker.version>2.3.29</freemarker.version>
