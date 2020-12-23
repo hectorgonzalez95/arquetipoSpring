@@ -14,6 +14,9 @@ public class MiController {
 
 	@GetMapping(value = "mi2")
 	public ModelAndView prueba(){		
+		ModelAndView mv = new ModelAndView();		
+		String bbb = "bbb";
+		mv.addObject("bbb", bbb);		
 		return new ModelAndView();	
 	}
 }
