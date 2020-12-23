@@ -13,7 +13,7 @@ import lombok.extern.slf4j.Slf4j;
 public class MiController {
 
 	@GetMapping(value = "mi2")
-	public ModelAndView prueba(){		
+	public ModelAndView prueba(){
 		ModelAndView mv = new ModelAndView();		
 		String bbb = "bbb";
 		mv.addObject("bbb", bbb);		
