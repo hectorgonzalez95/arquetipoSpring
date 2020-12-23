@@ -14,6 +14,7 @@ public class MiController {
 
 	@GetMapping(value = "mi2")
 	public ModelAndView prueba(){		
-		return new ModelAndView();	
+		String hsfhsdkf = "fshdfios";
+		return new ModelAndView();
 	}
 }
